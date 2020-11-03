@@ -3,15 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>exercice4</title>
+    
+    <title>ex 4</title>
 </head>
 <body>
-    <form>
-        <label for="lastName">Nom :</label><input type="text" id="lastName" placeholder="Nom">
-        <label for="firstName">Prénom :</label><input type="text" id="firstName" placeholder="Prénom">
-        <label for="city">Ville :</label><input type="text" id="city" placeholder="Ville">
-        <button id="clickButton">Clic</button>
+    <h1>Formulaire </h1>
+    <form method="POST" action="#">
+        <div>
+            <label for="lastname">Nom :</label> 
+            <input type="text" name="lastname" id="lastname" required>
+        </div>
+        <div>
+            <label for="firstname">Prenom :</label> 
+            <input type="text" name="firstname" id="firstname" required>
+        </div>
+        <div>
+            <label for="city">Ville :</label>
+            <input type="text" name="city" id="city" required>  
+        </div>
+
+         <input type="button" value="valider" id="clickButton" > 
+
     </form>
+
     <script src="assets/js/fichierscript.js"></script>
 </body>
 </html>
